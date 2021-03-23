@@ -1,0 +1,40 @@
+{
+  "name": "nuxt-token-claims-module",
+  "version": "1.0.0",
+  "description": "Token claims handling module for Nuxt.js apps.",
+  "author": "yodaskillme@gmail.com",
+  "license": "ISC",
+  "main": "lib/module.js",
+  "keywords": [
+    "nuxtjs",
+    "token-auth",
+    "token-claims"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egorvdovenko/token-claims-module"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "example": "nuxt example",
+    "lint": "eslint --ext .js example lib test",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "@nuxtjs/router": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "body-parser": "latest",
+    "eslint": "latest",
+    "husky": "latest",
+    "jest": "latest",
+    "nuxt-edge": "latest"
+  }
+}
