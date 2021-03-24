@@ -36,7 +36,7 @@ Example:
 ```js
 {
   middleware: {
-    // List of claims, that will be use for cheking.
+    // List of claims, that will be used for cheking route claims.
     claims: ['role', 'permission'],
     // It will be used to make redirect, after failed claims checking.
     // By default exec error({ statusCode: 403 })
@@ -65,7 +65,7 @@ this.$tokenClaims.check(name, value [, ctx])
 
 ## Usage example
 
-### Route claims
+### routing
 
 ```js
 {
@@ -76,13 +76,14 @@ this.$tokenClaims.check(name, value [, ctx])
       role: 'ExampleRole',
       permission: 'ExamplePermission'
       // Array usage
+      // role: ['ExampleRole1', 'ExampleRole2']
       // permission: ['ExamplePermission1', 'ExamplePermission2']
     }
   }
 }
 ```
 
-### From component usage
+### component
 
 ```js
 export default {
