@@ -35,7 +35,7 @@ tokenClaims: {
 Example:
 ```js
 {
-  // List of claims, that will be used for cheking route.
+  // List of claims, that will be used for cheking route
   claims: [
     {
       // Name of claim, it's required
@@ -46,7 +46,7 @@ Example:
     }
   ],
   middleware: {
-    // It will be used to make redirect, after failed claims checking.
+    // It will be used to make redirect, after failed claims checking
     // By default exec error({ statusCode: 403 })
     redirect: '/errors/403'
   },
