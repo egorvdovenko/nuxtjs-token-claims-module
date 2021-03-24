@@ -1,6 +1,6 @@
 {
   "name": "nuxt-token-claims-module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Token claims handling module for Nuxt.js apps.",
   "author": "yodaskillme@gmail.com",
   "license": "ISC",
