@@ -18,8 +18,13 @@ module.exports = {
     '@nuxtjs/router'
   ],
   tokenClaims: {
+    claims: [
+      {
+        name: 'permission',
+        superValue: 'General'
+      }
+    ],
     middleware: {
-      claims: ['role', 'permission'],
       redirect: '/errors/403'
     },
     cookie: {
