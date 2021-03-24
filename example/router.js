@@ -19,7 +19,6 @@ export function createRouter () {
         component: () => import('~/pages/test.vue').then(m => m.default || m),
         meta: {
           claims: {
-            role: 'Administrator',
             permission: 'ContentPages'
           }
         }
