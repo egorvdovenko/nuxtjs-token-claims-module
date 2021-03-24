@@ -35,9 +35,17 @@ tokenClaims: {
 Example:
 ```js
 {
+  // List of claims, that will be used for cheking route.
+  claims: [
+    {
+      // Name of claim, it's required
+      name: 'claimName',
+      // You can specify a super value for claim
+      // If claim contain this value, it will be valid no matter what
+      superValue: 'claimSuperValue'
+    }
+  ],
   middleware: {
-    // List of claims, that will be used for cheking route claims.
-    claims: ['role', 'permission'],
     // It will be used to make redirect, after failed claims checking.
     // By default exec error({ statusCode: 403 })
     redirect: '/errors/403'
@@ -56,11 +64,12 @@ Anywhere in your application you can use following methods:
 ### check
 
 ```js
-this.$tokenClaims.check(name, value [, ctx])
+this.$tokenClaims.check(name, value[, superValue, ctx])
 // return boolean value
 // name - name of claim
-// value - value of claim, it can be primitive or array of values
-// ctx - app context, it's required if app running in universal mode
+// value - value of claim, it can be primitive value or array
+// [superValue] - if claim contain this value, it will be valid no matter what
+// [ctx] - app context, it's required if app running in universal mode
 ```
 
 ## Usage example
