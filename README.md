@@ -35,20 +35,21 @@ tokenClaims: {
 Example:
 ```js
 {
-  // List of claims, that will be used for cheking route
-  claims: [
-    {
-      // Name of claim, it's required
-      name: 'claimName',
-      // You can specify a super value for claim
-      // If claim contain this value, it will be valid no matter what
-      superValue: 'claimSuperValue'
-    }
-  ],
   middleware: {
     // It will be used to make redirect, after failed claims checking
     // By default exec error({ statusCode: 403 })
-    redirect: '/errors/403'
+    redirect: '/errors/403',
+    // List of claims, that will be used for cheking route
+    // It's required
+    claims: [
+      {
+        // Name of claim, it's required
+        name: 'claimName',
+        // You can specify a super value for claim
+        // If claim contain this value, it will be valid no matter what
+        superValue: 'claimSuperValue'
+      }
+    ]
   },
   cookie: {
     // Name of token cookie, it's required
