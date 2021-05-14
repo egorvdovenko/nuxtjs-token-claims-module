@@ -62,6 +62,14 @@ Example:
 
 Anywhere in your application you can use following methods:
 
+### get
+
+```js
+this.$tokenClaims.get([ctx])
+// return token claims object
+// [ctx] - app context, it's required if app running in universal mode
+```
+
 ### check
 
 ```js
