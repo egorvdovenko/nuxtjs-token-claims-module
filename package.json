@@ -1,6 +1,6 @@
 {
   "name": "nuxt-token-claims-module",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Token claims handling module for Nuxt.js apps.",
   "author": "yodaskillme@gmail.com",
   "license": "ISC",
@@ -22,7 +22,9 @@
     "lint": "eslint --ext .js example lib test",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "js-base64": "^3.6.0"
+  },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
